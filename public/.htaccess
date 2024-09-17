@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/(index\.php|images|files|view/assets|robots\.txt|sitemap\.xml)
+RewriteRule .* index.php [L,QSA]
